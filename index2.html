@@ -1,0 +1,415 @@
+<html>
+	<head>
+		<title>Tienda</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+		<script src="script.js" language="javascript" type="text/javascript"></script>
+		<script src="librerias/jquery-3.2.1.min.js"></script>
+    <script src="librerias/bootstrap/js/bootstrap.min.js"></script>
+    <script src="librerias/alertifyjs/alertify.min.js"></script>
+    <style>
+    * { margin:0;
+        padding:0;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+       box-sizing:border-box;
+      }
+  .social {
+    position:center;
+    left:0;
+    top:200px;
+    z-index:2000; 
+  } 
+  .social ul{
+    list-style:none;
+  } 
+  .social ul li a{
+    display:inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+  }
+  .social ul li .icon-facebook {background:#3b5998; }
+  .social ul li .icon-twiter {background:#00abf0;}
+  .social ul li .icon-pinterest {background:#741e22;}
+  .social ul li .icon-mail {background:#666666;}
+
+  .social ul li a:hover{
+    padding:10px 30px;
+    background:#000;
+    }
+    .registratee{
+  margin-top: 25px;
+   }
+        </style>
+	</head>
+
+
+	<body>
+    <div class="registratee">
+		<li><a href="registro3.php">REGISTRATE</a></li>
+		</div>
+	<header class="main-header">	
+  <div class="container container--flex">
+    <div class="main-header__container">
+      <h1 class="main-header__title">Minimarket COVID-19</h1>
+      <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+      <nav class="main-nav" id="main-nav">
+        <ul class="menu">
+          <li class="menu__item"><a href="Inicio.html" class="menu__link">INICIO</a></li>
+          <li class="menu__item"><a href="productos.html" class="menu__link">PRODUCTOS</a></li>
+          <li class="menu__item"><a href="" class="menu__link">OFERTAS</a></li>
+          <li class="menu__item"><a href="" class="menu__link">COMPRAS</a></li>
+          <li class="menu__item"><a href="" class="menu__link">CONTACTANOS</a></li>
+        </ul>
+      </nav>
+    </div>
+
+     
+
+    <div class="main-header__container">
+   		<label>
+           <div id="whatsapp-icon" 
+         style="position:fixed; left:5px; bottom:5px; text-align:center; padding:1px">
+      <a href="https://api.whatsapp.com/send?phone=+51987160516">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/70px-WhatsApp.svg.png" width="110" height="175"></a>
+      </div>
+      </label>
+    </div>
+
+
+    <div class="main-header__container">
+    	<div id='product-component-2dd3c8704e6'></div>
+      <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+      <a href="" class="main-header__btn">CARRITO<i class="fas fa-shopping-cart"></i></a>
+      <input type="search" class="main-header__input" placeholder="Buscar"><i class="fas fa-search"></i>
+    </div>
+
+<div class="social">
+    <ul>
+      <li><a href="https://www.facebook.com"class="icon-facebook"></a></li>
+      <li><a href="https://www.twiter.com"class="icon-twitter"></a></li>
+      <li><a href="https://www.pinterest.com"class="icon-pinterest"></a></li>
+      <li><a href="https://www.gmail.com"class="icon-mail"></a></li>
+    </ul>
+</div>
+
+  </div>
+</header>
+<div class="container-slider">
+  <div class="slider" id="slider">
+    <div class="slider__section">
+      <img src="IMAGENES/imagen8.png">
+      <div class="slider__content">
+        <h2 class="slider__title">Productos de primera necesidad</h2>
+        <p class="slider__txt">Todo con descuento</p>
+        <a href="" class="btn-shop">Delivery</a>
+      </div>
+    </div>
+    <div class="slider__section">
+  	   <img src="IMAGENES/imagen9.png">
+      <div class="slider__content">
+        <h2 class="slider__title">Chocolates</h2>
+        <p class="slider__txt">De dsitintos precios y marcas</p>
+        <a href="" class="btn-shop">Recojo en tienda</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="IMAGENES/frutas.png">
+       <div class="slider__content">
+        <h2 class="slider__title">Frutas</h2>
+        <p class="slider__txt">Manzanas,peras,melones,etc</p>
+        <a href="" class="btn-shop">Aprovecha la oferta</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="IMAGENES/imagen3.png" alt="" class="slider__img">
+      <div class="slider__content">
+        <h2 class="slider__title">Licores</h2>
+        <p class="slider__txt">Los mejores licores a un buen precio</p>
+        <a href="" class="btn-shop">COMPRA AHORA</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+  <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
+<main class="main">
+  <div class="container">
+    <h2 class="main-title">LOS MAS VENDIDOS</h2>
+    <section class="container-products">
+      <div class="product">
+        <img src="IMAGENES/arroz.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Arroz faraon de 5 Kg</h3>
+          <span class="product__price">$15.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/gaseosa.png">
+        <div class="product__description">
+          <h3 class="product__title">Gaseosa Inka Cola de 300 ml</h3>
+          <span class="product__price">$2.50</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/azucar.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Azucar rubia 1 Kg</h3>
+          <span class="product__price">$3.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/atun.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Filete de atun gloria</h3>
+          <span class="product__price">$5.50</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/pomarola.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Salsa de tomate pomarola</h3>
+          <span class="product__price">$1.50</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/aceite.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Aceites primor de 1 Lt</h3>
+          <span class="product__price">$8.00/$12.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/papel.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Papel paracas de 4 rollos</h3>
+          <span class="product__price">$5.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="IMAGENES/leche.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Leche evaporada gloria</h3>
+          <span class="product__price">$3.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+            <div class="product">
+        <img src="IMAGENES/sapolio.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Detergente sapolio</h3>
+          <span class="product__price">$1.00/$4.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+            <div class="product">
+        <img src="IMAGENES/manty.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Mantequilla Manty</h3>
+          <span class="product__price">$1.50</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+            <div class="product">
+        <img src="IMAGENES/kn96.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Mascarilla kn95</h3>
+          <span class="product__price">$3.50</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+            <div class="product">
+        <img src="IMAGENES/lejia.png" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Pack de lejia y puliton Clorox</h3>
+          <span class="product__price">$10.00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+
+    </section>
+    <section class="container__testimonials">
+      <h2 class="section__title">Dia del</h2>
+      <h3 class="testimonial__title">Día Internacional en Recuerdo del Desastre de Chernóbyl </h3>
+      <p class="testimonial__txt">El 26 de abril se celebra el Día Internacional de Recuerdo del Desastre de Chernóbyl, una fecha decretada por la ONU con el objetivo de conmemorar uno de los mayores desastres nucleares que ha vivido la humanidad en las últimas décadas, ocurrido en Pripyat, Ucrania y el cual dejó un saldo muy alto de muertos y heridos debido a la radiación nuclear.</p>
+    </section>
+
+
+    <div class="container-editor">
+      <div class="editor__item">
+        <img src="IMAGENES/tienda1.png" alt="" class="editor__img">
+        <p class="editor__circle">Pequeño vistazo</p>
+      </div>
+      <div class="editor__item">
+        <img src="IMAGENES/dulces.png" alt="" class="editor__img">
+        <p class="editor__circle">Para los mas peques</p>
+      </div>
+    </div>
+    <section class="container-tips">
+      <div class="tip">
+        <i class="far fa-hand-paper"></i>
+        <h2 class="tip__title"></h2>
+        <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</p>
+        <a href="" class="btn-shop">SHOP NOW</a>
+      </div>
+      <div class="tip">
+        <i class="fas fa-rocket"></i>
+        <h2 class="tip__title">Fast Shipping</h2>
+        <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <a href="" class="btn-shop">SHOP NOW</a>
+      </div>
+      <div class="tip">
+        <i class="fas fa-cog"></i>
+        <h2 class="tip__title">UV Protection</h2>
+        <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <a href="" class="btn-shop">SHOP NOW</a>
+      </div>
+    </section>
+  </div>
+
+</main>
+<footer class="main-footer">
+  <div class="footer__section">
+    <h2 class="footer__title">Acerca de nosotros</h2>
+    <p class="footer__txt">Somos un equipo joven del area de DSI en el cual estamos avanzando el siguiente proyecto espero sea de su  agrado.</p>
+  </div>
+  <div class="footer__section">
+    <h2 class="footer__title">Localizacion :</h2>
+    <p class="footer__txt">Callao,Lima,Peru</p>
+    <h2 class="footer__title">Contacto</h2>
+    <p class="footer__txt">Celu  : 987160516</p>
+    <p class="footer__txt">Email : jcahuana620@gmail.com</p>
+  </div>
+  <div class="footer__section">
+    <h2 class="footer__title">Atajos(estamos trabajando en ello)</h2>
+    <a href="" class="footer__link">Inicio</a>
+    <a href="" class="footer__link">Ajuste</a>
+    <a href="" class="footer__link">Error</a>
+    <a href="" class="footer__link">Compra</a>
+    <a href="" class="footer__link">Contactanos</a>
+  </div>
+  <div class="footer__section">
+    <h2 class="footer__title">Ingresa su correo</h2>
+    <p class="footer__txt">Si te suscribes recibiras una grandiosa oferta</p>
+    <input type="email" class="footer__input" placeholder="Enter your email">
+  </div>
+  <p class="copy">© 2021 Google. All Rights Reserved | Design by W3Layouts</p>
+</footer>
+
+
+<script type="text/javascript">
+
+
+//
+
+/*Restringo Fecha de anteriores a la de hoy */
+var today = new Date().toISOString().split('T')[0];
+document.getElementsByName("fecha")[0].setAttribute('min', today);
+
+/*Restringo Fecha de selección hasta 180 días después de la fecha actual */
+var maxDate = new Date(new Date().getTime() + 180 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+document.getElementsByName("fecha")[0].setAttribute('max', maxDate)
+
+
+
+
+//Tenés un array de strings de fecha
+var disableDates = ['31-10-2020', '01-11-2020', '25-12-2020', '01-01-2021'];
+//Prefiero llevarlo a Date().getTime()
+const feriados = disableDates.map(f=>new Date(+(f=f.split('-'))[2], +f[1]-1, +f[0]).getTime());
+
+
+//Validación de feriados DESPUES de que el usuario seleccionó una fecha
+function sinFeriados(e){
+    //Obtenemos el valor de la fecha con getTime()
+    let f = e.target.value.split('-'), 
+        elegido = new Date(+f[0], +f[1]-1, +f[2]).getTime();
+
+    //comprobamos contra el array de feriados
+    if( feriados.includes(elegido) ){
+        e.target.setCustomValidity('No se puede elegir un feriado');
+    } else {
+        e.target.setCustomValidity('');
+    }
+}
+function mostrarValidacion(e){
+    if (!e.target.reportValidity()){ //muestra validación
+        e.target.value = '';
+    }
+}
+
+//Asociar evento a todos los input dates
+var dateInputs = document.querySelectorAll('[type=date]');
+for (let inp of dateInputs) {
+    inp.addEventListener('input',sinFeriados);
+    inp.addEventListener('focusout',mostrarValidacion);
+}
+
+
+	let btnMenu = document.getElementById('btn-menu');
+let mainNav = document.getElementById('main-nav');
+ btnMenu.addEventListener('click', function(){
+  mainNav.classList.toggle('mostrar');
+});
+
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLast = sliderSection[sliderSection.length -1];
+
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
+
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+function Next() {
+  let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+  slider.style.marginLeft = "-200%";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function(){
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
+
+function Prev() {
+  let sliderSection = document.querySelectorAll(".slider__section");
+  let sliderSectionLast = sliderSection[sliderSection.length -1];
+  slider.style.marginLeft = "0";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function(){
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
+
+btnRight.addEventListener('click', function(){
+  Next();
+});
+
+btnLeft.addEventListener('click', function(){
+  Prev();
+});
+
+setInterval(function(){
+  Next();
+}, 5000);
+
+</script>
+	</body>	
+</html>
